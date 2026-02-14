@@ -11,19 +11,62 @@
     <script src="script.js"defer></script>
 </head>
 <body>
-    <header>
-        <img src="images/logo.svg" alt="">
-    </header>
-    <main>
-        <div class="container">
-            <h1>Body Mass Index Calculator</h1>
-            <p>
-                Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
-            </p>
-        </div>
-    </main>
-    <footer>
+    <div class="hero-wrapper">
+        <header>
+            <img src="images/logo.svg" alt="">
+        </header>
+        <main>
+            <div class="container hero">
+                <h1>Body Mass Index Calculator</h1>
+                <p>
+                    Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
+                </p>
+            </div>
+    </div>
+    <div class="wrapper-form-container">
+        <section class="container wrapper-form">
+            <form>
+                <h2>Enter your details below</h2>
+                <div class="metric-group">
+                    <div class="metric-selector">
+                        <input type="radio" id="metric" name="unit" value="metric">
+                        <label for="metric">Metric</label>
+                    </div>
 
-    </footer>
+                    <div class="metric-selector">
+                        <input type="radio" id="imperial" name="unit" value="imperial">
+                        <label for="imperial">Imperial</label>
+                    </div>
+                </div>
+
+                <div class="height-box">
+                    <label for="metric-height">Height</label>
+                
+                    <div class="input-group">
+                    <input type="number" id="metric-height" name="metric-height" value="0">
+                    <span>cm</span>
+                    </div>
+                </div>
+                
+                <div class="weight-box">
+                    <label for="metric-weight">Weight</label>
+                
+                    <div class="input-group">
+                    <input type="number" id="metric-weight" name="metric-weight" value="0">
+                    <span>kg</span>
+                    </div>
+                </div>
+            </form>
+            <div class="score-wrapper container">
+                <h3>Welcome!</h3>
+                <p>Enter your height and weight and you’ll see your BMI result here</p>
+            </div>
+        </section>
+    </div>
+    </main>
+    
+        <footer>
+
+        </footer>
 </body>
 </html>

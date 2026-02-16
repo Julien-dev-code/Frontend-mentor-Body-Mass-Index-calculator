@@ -22,48 +22,57 @@
                     Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
                 </p>
             </div>
+    
+        <div class="wrapper-form-container">
+            <section class="container wrapper-form">
+                <form>
+                    <h2>Enter your details below</h2>
+                    <div class="metric-group">
+                        <div class="metric-selector">
+                            <input type="radio" id="metric" name="unit" value="metric">
+                            <label for="metric">Metric</label>
+                        </div>
+
+                        <div class="metric-selector">
+                            <input type="radio" id="imperial" name="unit" value="imperial">
+                            <label for="imperial">Imperial</label>
+                        </div>
+                    </div>
+
+                    <div class="height-box">
+                        <label for="metric-height">Height</label>
+                    
+                        <div class="input-group">
+                            <input type="number" id="metric-height" name="metric-height" value="0">
+                            <span>cm</span>
+                        </div>
+                    </div>
+                    
+                    <div class="weight-box">
+                        <label for="metric-weight">Weight</label>
+                    
+                        <div class="input-group">
+                            <input type="number" id="metric-weight" name="metric-weight" value="0">
+                            <span>kg</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="score-wrapper container">
+                    <h3>Welcome!</h3>
+                    <p>Enter your height and weight and you’ll see your BMI result here</p>
+                </div>
+            </section>
+        </div>
     </div>
-    <div class="wrapper-form-container">
-        <section class="container wrapper-form">
-            <form>
-                <h2>Enter your details below</h2>
-                <div class="metric-group">
-                    <div class="metric-selector">
-                        <input type="radio" id="metric" name="unit" value="metric">
-                        <label for="metric">Metric</label>
-                    </div>
-
-                    <div class="metric-selector">
-                        <input type="radio" id="imperial" name="unit" value="imperial">
-                        <label for="imperial">Imperial</label>
-                    </div>
-                </div>
-
-                <div class="height-box">
-                    <label for="metric-height">Height</label>
-                
-                    <div class="input-group">
-                    <input type="number" id="metric-height" name="metric-height" value="0">
-                    <span>cm</span>
-                    </div>
-                </div>
-                
-                <div class="weight-box">
-                    <label for="metric-weight">Weight</label>
-                
-                    <div class="input-group">
-                    <input type="number" id="metric-weight" name="metric-weight" value="0">
-                    <span>kg</span>
-                    </div>
-                </div>
-            </form>
-            <div class="score-wrapper container">
-                <h3>Welcome!</h3>
-                <p>Enter your height and weight and you’ll see your BMI result here</p>
-            </div>
-        </section>
+    <div class="bmi-result-title container">
+        <img src="images/image-man-eating.webp" alt="">
+        <h2>What your BMI result means</h2>
+        <p>
+            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
+        </p>
     </div>
     </main>
+   
     
         <footer>
 

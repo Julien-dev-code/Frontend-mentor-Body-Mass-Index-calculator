@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --neutral-white: #FFFFFF;
     --neutral-black: #000000;
@@ -11,8 +15,14 @@
   }
 
 body {
-    font-family: inter sans-serif;
+    font-family: inter, sans-serif;
     margin: 0;
+}
+header {
+    text-align: center;
+}
+header img {
+    margin-top: 20px;
 }
 .hero-wrapper {
     background: linear-gradient(
@@ -23,18 +33,19 @@ body {
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
     position: relative;
-    padding-bottom: 300px;
+    padding-bottom: 580px;
 }
 .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 .hero h1 {
     color: var(--blue-900);
     text-align: center;
     font-size: 48px;
     line-height: 110%;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
     font-weight: 600;
 
 }
@@ -44,19 +55,23 @@ body {
     font-family: inter sans-serif;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0%;
+
 }
 .wrapper-form-container  {
     position: absolute;
-    bottom: -350px;
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 110px);
+    width: 90%;
+    margin: 0 auto;
     max-width: 600px;
     border-radius: 30px;
     background-color: var(--neutral-white);
     padding: 32px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1)
+}
+.wrapper-form-container .wrapper-form {
+    padding: 0;
 }
 .container .input-group {
     border: 1px solid var(--grey-500);
@@ -73,6 +88,7 @@ form h2 {
 .metric-group {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .metric-group label {
     color: var(--grey-500);
@@ -93,18 +109,19 @@ form h2 {
     border-radius: 12px;
     padding: 24px;
     display: flex;
-    justify-content: space-between;
+    gap:10px;
     margin-bottom: 16px;
     
 
 }
 .input-group input {
+    width: 100%;
     color: var(--grey-500);
     font-size: 24px;
     font-weight: 600;
     line-height: 120%;
     letter-spacing: -5%;
-    background-color: var(--blue-100);
+    background-color: var(--neutral-white);
 }
 .input-group span {
     color: var(--blue-500);
@@ -135,7 +152,7 @@ form h2 {
 .bmi-result-title img {
     width: 100%;
     height: auto;
-    margin-top: 400px;
+    margin-top: 150px;
 }
 .bmi-result-title h2{
     color: var(--blue-900);
@@ -154,8 +171,11 @@ form h2 {
     letter-spacing: 0%;
 }
 .health-tips-wrapper {
-    background-color: #D6E6FE;
+    background-color: #ffffff;
     padding-top: 60px;
+}
+.health-tips {
+    padding-bottom: 40px;
 }
 .health-tips h3 {
     color: var(--blue-900);
@@ -196,6 +216,7 @@ form h2 {
     letter-spacing: 0%;
 }
 .limitation-bmi-cards {
+    width: 100%;
     box-shadow: 0 4px 20px rgba(0, 50, 150, 0.08);
     border-radius: 30px;
     padding-bottom: 20px;
@@ -218,6 +239,7 @@ form h2 {
 .limitation-bmi-cards-title img {
     display: inline-block;
     vertical-align: middle;
+    max-width: 100%;
 }
 .limitation-bmi-cards-content p {
     color: var(--grey-500);
